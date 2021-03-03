@@ -21,8 +21,59 @@
         <h1> TO DO LIST <i class="fa fa-heart"></i></i>
         </h1>
     </header>
+    <br style="clear:both">
 
-    <script src="js/scripts.js"></script>
+    <div class="row">
+        <div class="col-md-6">
+            <h1><span class="formHeading">Enter Details</span></h1>
+            <div>
+                <form id="myForm">
+                    <div class="form-group">
+                        <label for="taskName">Task Name:</label>
+                        <input class="form-control" type="text" name="taskName" placeholder="Task name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nature">Nature:</label>
+                        <div class="form-group form-check">
+                            <select class="form-control" name="nature" required>
+                                <option value="technical">Technical</option>
+                                <option value="mathematical">Mathematical</option>
+                                <option value="scientific">Scientific</option>
+                                <option value="artistic">Artistic</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="startDate">Start Date:</label>
+                        <input class="form-control" type="date" name="startDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">End Date:</label>
+                        <input class="form-control" type="date" name="endDate" required>
+                    </div>
+                    <div class="form-group">
+                        <button class="button" type="submit">Add Task</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h1>Tasks</h1>
+            <div class="list">
+                <P>bb</P>
+            </div>
+        </div>
+    </div>
+    <br style="clear:both">
+    <div class="footer ">
+        <div class="copyright " style="text-align:center ">
+            <p>
+                Copyright &copy 2021 All Rights Reserved,
+                <a href="https://github.com/alvynah "><i class="fa fa-cloud "></i> ALVYNAH</a>
+            </p>
+        </div>
+        <script src="js/scripts.js"></script>
 </body>
 
 </html>

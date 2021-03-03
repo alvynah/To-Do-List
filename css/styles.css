@@ -8,7 +8,14 @@ header {
     margin-right: 1%;
     text-align: center;
     box-shadow: 0px 0px 20px 0px chocolate;
-    border-radius: 50%;
+    border-radius: 10%;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 3%;
+    color: white;
 }
 
 body {
@@ -18,6 +25,64 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+form {
+    margin-left: 3%;
+    width: 60%;
+    padding: 20px;
+    border-radius: 6px;
+    background: transparent;
+    box-shadow: 0 0 20px 0 chocolate;
+    float: left;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: chocolate;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgoldenrod;
+}
+
+.form-control:hover,
+.form-check:hover,
+input:hover::placeholder {
+    color: chocolate;
+}
+
+.form-group input:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 6px 0 chocolate;
+    color: chocolate;
+}
+
+label {
+    color: chocolate;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+.list {
+    width: 80%;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 20px 0 gray;
+    margin-left: 3%;
+}
+
+.footer {
+    color: white;
+    font-style: oblique;
 }
 
 @media screen and (min-width:480px) {
