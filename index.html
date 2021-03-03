@@ -30,12 +30,12 @@
                 <form id="myForm">
                     <div class="form-group">
                         <label for="taskName">Task Name:</label>
-                        <input class="form-control" type="text" name="taskName" placeholder="Task name" required>
+                        <input class="form-control" type="text" name="taskName" id="taskName" placeholder="Task name" required>
                     </div>
                     <div class="form-group">
                         <label for="nature">Nature:</label>
                         <div class="form-group form-check">
-                            <select class="form-control" name="nature" required>
+                            <select class="form-control" name="nature" id="nature" required>
                                 <option value="technical">Technical</option>
                                 <option value="mathematical">Mathematical</option>
                                 <option value="scientific">Scientific</option>
@@ -45,11 +45,11 @@
                     </div>
                     <div class="form-group">
                         <label for="startDate">Start Date:</label>
-                        <input class="form-control" type="date" name="startDate" required>
+                        <input class="form-control" type="date" name="startDate" id="startDate" required>
                     </div>
                     <div class="form-group">
                         <label for="endDate">End Date:</label>
-                        <input class="form-control" type="date" name="endDate" required>
+                        <input class="form-control" type="date" name="endDate" id="endDate" required>
                     </div>
                     <div class="form-group">
                         <button class="button" type="submit">Add Task</button>
@@ -61,7 +61,9 @@
         <div class="col-md-6">
             <h1>Tasks</h1>
             <div class="list">
-                <P>bb</P>
+                <ol class="task" id="taskList">
+
+                </ol>
             </div>
         </div>
     </div>
