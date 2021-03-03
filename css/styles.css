@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px chocolate;
+    border-radius: 50%;
+}
+
+body {
+    background-image: url(../images/elephant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@media screen and (min-width:480px) {
+    body {
+        background-image: url(../images/elephant.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+}
