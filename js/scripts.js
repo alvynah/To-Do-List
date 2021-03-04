@@ -9,17 +9,24 @@ $(document).ready(function() {
     $("form#myForm").submit(function(event) {
         event.preventDefault();
         var inputtedTaskName = $("input#taskName").val();
-        var inputtedNature = $("select#nature").val();
+        var inputtedNature = $("#nature option:selected").val();
         var inputtedStartDate = $("input#startDate").val();
         var inputtedEndDate = $("input#endDate").val();
 
         var newTask = new Tasks(inputtedTaskName, inputtedNature, inputtedStartDate, inputtedEndDate);
-        $("ol#tasklist").append("<li>" + newTask.taskName + "</li>");
+        $("ol#taskList").append("<li><span class='taskNames'>" + newTask.taskName + "</span></li>");
 
         $("input#taskName").val("");
-        $("input#nature").val("");
+        $("#nature option:selected").val("");
         $("input#startDate").val("");
         $("input#endDate").val("");
+        $(".taskNames").last().click(function() {
+            $("#show-task").show();
+            $(".task-name").text(newTask.taskName);
+            $(".task-nature").text(newTask.nature);
+            $(".start-date").text(newTask.startDate);
+            $(".end-date").text(newTask.endDate);
+        });
     });
 
 });

@@ -80,6 +80,27 @@ label {
     margin-left: 3%;
 }
 
+.task {
+    color: blue;
+    cursor: pointer;
+}
+
+#show-task {
+    display: none;
+    font-family: fantasy;
+    font-weight: 700;
+}
+
+fieldset {
+    margin-left: 3%;
+    width: 60%;
+    padding: 20px;
+    border-radius: 6px;
+    background: transparent;
+    box-shadow: 0 0 20px 0 chocolate;
+    float: left;
+}
+
 .footer {
     color: white;
     font-style: oblique;
